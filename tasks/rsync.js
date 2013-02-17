@@ -10,8 +10,8 @@ module.exports = function (grunt) {
 
         var options = this.data;
 
-        options.src = this.file.src;
-        options.dest = this.file.dest;
+        options.src = this.data.src;
+        options.dest = this.data.dest;
 
         var host = typeof options.host === "undefined" ? "" : options.host+":";
 
